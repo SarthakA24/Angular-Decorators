@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-
+  
+  inputNumber: number = 0;
   constructor() { }
 
   ngOnInit(): void {
