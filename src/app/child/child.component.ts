@@ -15,7 +15,7 @@ export class ChildComponent implements OnInit {
   eventEmitter = new EventEmitter<string>();
 
   childButton() {
-
+    this.eventEmitter.emit("Message from Child to Parent using @Output Decorator");
   }
 
   constructor() { }
