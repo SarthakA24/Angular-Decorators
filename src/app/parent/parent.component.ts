@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ParentComponent implements OnInit {
   
   inputNumber: number = 0;
+  dataFromChild: any;
+
+  dataFromChildFun(event:any) {
+    this.dataFromChild = event;
+  }
   constructor() { }
 
   ngOnInit(): void {
