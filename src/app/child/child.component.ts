@@ -12,7 +12,7 @@ export class ChildComponent implements OnInit {
   // key!: any;
 
   @Output()
-  childKey = new EventEmitter<string>();
+  eventEmitter = new EventEmitter<string>();
 
   childButton() {
 
