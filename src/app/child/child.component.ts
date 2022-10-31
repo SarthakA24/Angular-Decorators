@@ -8,7 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   @Input()
-  key!: number;
+  key: any;
+  // key!: any;
+
+  childButton() {
+    
+  }
 
   constructor() { }
 
