@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogsService } from '../logs.service';
 
 @Component({
   selector: 'app-parent',
@@ -13,7 +14,11 @@ export class ParentComponent implements OnInit {
   dataFromChildFun(event:any) {
     this.dataFromChild = event;
   }
-  constructor() { }
+  constructor(private service: LogsService) { }
+
+  serviceCall() {
+    this.service.serviceFunction();
+  }
 
   ngOnInit(): void {
   }
